@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  BANDLAND COMING SOON
+  <link rel="stylesheet" type="text/css" href ="http://localhost:3003/style.css"></link>
+  <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:3001/reset.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:3001/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <body style = 'background: #E9D3B3'>
+    <div id = "mediaPlayer"></div>
+    <div id = "fans"></div>
+    <div id = "recommended"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src ="http://localhost:3002/bundle.js"></script>
+    <script src ="http://localhost:3003/bundle.js"></script>
+    <script src ="http://localhost:3001/bundle.js"></script>
+    <script>
+    ReactDOM.render(
+      React.createElement(Music),
+      document.getElementById("mediaPlayer")
+    );
+    ReactDOM.render(
+      React.createElement(SupportSection),
+      document.getElementById("fans")
+    );
+    ReactDOM.render(
+      React.createElement(RecommendedAlbumsApp),
+      document.getElementById("recommended")
+    );
+
+    </script>
+  </body>
+</head>
